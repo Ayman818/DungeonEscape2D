@@ -1,0 +1,60 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="project://database/Assets/Roguelike2D/TutorialAssets/Sprites/UI/GameHUD.uss?fileID=7433441132597879392&amp;guid=c01e8cefd553c0046b00903f0973ac94&amp;type=3#GameHUD"/>
+    <ui:VisualElement name="HUDRoot" class="hud-root">
+        <ui:VisualElement name="TopBar" class="top-bar">
+            <ui:VisualElement class="brand-area">
+                <ui:Label text="DUNGEON ESCAPE" class="hud-title"/>
+                <ui:Label text="THE DESERT DUNGEON" class="hud-subtitle"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="stats-row">
+                <ui:VisualElement name="FoodBox" class="status-box">
+                    <ui:Label text="SURVIVAL" class="status-caption"/>
+                    <ui:Label name="FoodLabel" text="Food: 30" class="hud-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="LevelBox" class="status-box">
+                    <ui:Label text="DUNGEON" class="status-caption"/>
+                    <ui:Label name="LevelLabel" text="Level: 1" class="hud-label"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ControlsBar" class="controls-bar">
+            <ui:Label text="ARROW KEYS - MOVE / ATTACK" class="controls-title"/>
+            <ui:Label text="COLLECT FOOD | DEFEAT ENEMIES | FIND EXIT" class="controls-description"/>
+            <ui:Label text="ESC - PAUSE" class="controls-description"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="GameOverPanel" class="overlay">
+            <ui:VisualElement name="GameOverCard" class="menu-card">
+                <ui:Label text="THE DESERT DUNGEON" class="menu-eyebrow"/>
+                <ui:Label text="GAME OVER" class="game-over-title"/>
+                <ui:Label text="Your adventure has ended." class="menu-description"/>
+                <ui:Label text="You ran out of food!" class="menu-hint"/>
+                <ui:Button name="RestartButton" text="PLAY AGAIN" class="primary-button"/>
+                <ui:Label text="PRESS R TO RESTART" class="menu-hint"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="MainMenuPanel" class="overlay">
+            <ui:VisualElement class="menu-card">
+                <ui:Label text="WELCOME TO" class="menu-eyebrow"/>
+                <ui:Label text="DUNGEON ESCAPE" class="menu-title"/>
+                <ui:Label text="THE DESERT DUNGEON" class="menu-subtitle"/>
+                <ui:Label text="Survive the desert, defeat enemies, and find the exit." class="menu-description"/>
+                <ui:VisualElement class="menu-separator"/>
+                <ui:Button name="PlayButton" text="PLAY GAME" class="primary-button"/>
+                <ui:Button name="MainQuitButton" text="QUIT GAME" class="secondary-button"/>
+                <ui:Label text="ARROW KEYS: MOVE / ATTACK" class="menu-hint"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="PauseMenuPanel" class="overlay">
+            <ui:VisualElement class="menu-card">
+                <ui:Label text="DUNGEON ESCAPE" class="menu-eyebrow"/>
+                <ui:Label text="GAME PAUSED" class="menu-title"/>
+                <ui:Label text="Your adventure is waiting..." class="menu-description"/>
+                <ui:VisualElement class="menu-separator"/>
+                <ui:Button name="ResumeButton" text="RESUME GAME" class="primary-button"/>
+                <ui:Button name="PauseRestartButton" text="RESTART GAME" class="secondary-button"/>
+                <ui:Button name="PauseQuitButton" text="QUIT GAME" class="secondary-button"/>
+                <ui:Label text="PRESS ESC TO RESUME" class="menu-hint"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

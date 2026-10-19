@@ -1,0 +1,354 @@
+
+/* ========================================
+   DUNGEON ESCAPE 2D
+   DESERT THEME - UI TOOLKIT
+   ======================================== */
+
+/* ROOT */
+
+.hud-root {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* ========================================
+   TOP BAR
+   ======================================== */
+
+.top-bar {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    right: 12px;
+
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Title is on its own row */
+
+.brand-area {
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 8px;
+}
+
+.hud-title {
+    color: #F4CC7E;
+    font-size: 19px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    white-space: normal;
+}
+
+.hud-subtitle {
+    color: #C8A774;
+    font-size: 10px;
+    -unity-text-align: middle-center;
+}
+
+/* Food and Level row */
+
+.stats-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-box {
+    min-width: 100px;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    background-color: rgba(31, 22, 15, 0.94);
+
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+
+    border-top-color: #C49A54;
+    border-bottom-color: #C49A54;
+    border-left-color: #C49A54;
+    border-right-color: #C49A54;
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.status-caption {
+    color: #C8A26A;
+    font-size: 10px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    margin-bottom: 3px;
+}
+
+.hud-label {
+    color: #FFF0D2;
+    font-size: 17px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+/* ========================================
+   BOTTOM CONTROLS
+   ======================================== */
+
+.controls-bar {
+    position: absolute;
+    bottom: 10px;
+    left: 12px;
+    right: 12px;
+
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+
+    background-color: rgba(28, 20, 15, 0.88);
+
+    border-top-width: 1px;
+    border-top-color: #8F6A3E;
+
+    align-items: center;
+}
+
+.controls-title {
+    color: #F0CC8A;
+    font-size: 12px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    margin-bottom: 4px;
+}
+
+.controls-description {
+    color: #C7A979;
+    font-size: 10px;
+    -unity-text-align: middle-center;
+
+    margin-bottom: 3px;
+}
+
+/* ========================================
+   FULL-SCREEN OVERLAYS
+   ======================================== */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(9, 7, 5, 0.94);
+
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+/* ========================================
+   MENU CARD
+   ======================================== */
+
+.menu-card {
+    width: 86%;
+    max-width: 430px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    background-color: #261B13;
+
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+
+    border-top-color: #CC9950;
+    border-bottom-color: #CC9950;
+    border-left-color: #CC9950;
+    border-right-color: #CC9950;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========================================
+   MENU TYPOGRAPHY
+   ======================================== */
+
+.menu-eyebrow {
+    color: #C79E64;
+    font-size: 12px;
+
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    margin-bottom: 10px;
+}
+
+.menu-title {
+    color: #F4CC7E;
+    font-size: 30px;
+
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    white-space: normal;
+
+    margin-bottom: 10px;
+}
+
+.menu-subtitle {
+    color: #D6B27C;
+    font-size: 13px;
+
+    -unity-text-align: middle-center;
+
+    margin-bottom: 18px;
+}
+
+.menu-description {
+    color: #E7D8BC;
+    font-size: 14px;
+
+    -unity-text-align: middle-center;
+    white-space: normal;
+
+    margin-bottom: 16px;
+}
+
+.menu-hint {
+    color: #BE9B6B;
+    font-size: 11px;
+
+    -unity-text-align: middle-center;
+
+    margin-top: 12px;
+}
+
+.menu-separator {
+    width: 80%;
+    height: 1px;
+
+    background-color: #745331;
+
+    margin-top: 3px;
+    margin-bottom: 22px;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+
+.primary-button {
+    width: 85%;
+    max-width: 290px;
+    height: 48px;
+
+    background-color: #C28A3D;
+    color: #FFFFFF;
+
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+
+    border-top-color: #E9B864;
+    border-bottom-color: #E9B864;
+    border-left-color: #E9B864;
+    border-right-color: #E9B864;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-size: 16px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    margin-bottom: 12px;
+}
+
+.primary-button:hover {
+    background-color: #DEA653;
+}
+
+.primary-button:active {
+    background-color: #A76E25;
+}
+
+.secondary-button {
+    width: 85%;
+    max-width: 290px;
+    height: 46px;
+
+    background-color: #493225;
+    color: #F1D3A4;
+
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+
+    border-top-color: #8E653B;
+    border-bottom-color: #8E653B;
+    border-left-color: #8E653B;
+    border-right-color: #8E653B;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-size: 15px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    margin-bottom: 10px;
+}
+
+.secondary-button:hover {
+    background-color: #68462C;
+}
+
+/* ========================================
+   GAME OVER
+   ======================================== */
+
+.game-over-title {
+    color: #F16E55;
+
+    font-size: 38px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    margin-bottom: 16px;
+}
